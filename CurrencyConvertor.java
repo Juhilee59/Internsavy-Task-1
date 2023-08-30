@@ -8,8 +8,7 @@ public class CurrencyConvertor extends javax.swing.JFrame {
         initComponents();
     }
 
-        @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
+                                  
     private void initComponents() {
 
         jCheckBoxMenuItem1 = new javax.swing.JCheckBoxMenuItem();
@@ -134,10 +133,10 @@ public class CurrencyConvertor extends javax.swing.JFrame {
         );
 
         pack();
-    }// </editor-fold>                        
+    }                       
 
     private void ConvertActionPerformed(java.awt.event.ActionEvent evt) {                                        
-        // TODO add your handling code here:
+        
        Double convert;
         Double amount1= Double.parseDouble(amount.getText());
         if(txt1.getSelectedItem().toString()=="USD" && txt2.getSelectedItem().toString()=="BD TK")
@@ -165,15 +164,9 @@ public class CurrencyConvertor extends javax.swing.JFrame {
         
     }                                       
 
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
+        
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -190,9 +183,7 @@ public class CurrencyConvertor extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(CurrencyConvertor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
-
-        /* Create and display the form */
+        
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new CurrencyConvertor().setVisible(true);
@@ -200,7 +191,7 @@ public class CurrencyConvertor extends javax.swing.JFrame {
         });
     }
 
-    // Variables declaration - do not modify                     
+                         
     private javax.swing.JButton Convert;
     private java.awt.TextField amount;
     private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem1;
